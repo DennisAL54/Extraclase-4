@@ -1,9 +1,9 @@
 const mongoose = require("mongoose")
 
-var StudentSchema = new mongoose.Schema({
+var studentSchema = new mongoose.Schema({
     name: {
         type String
     }
 });
 
-mongoose.model("Student", StudentSchema);
+module.exports = mongoose.model("student", studentSchema);
